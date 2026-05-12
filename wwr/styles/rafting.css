@@ -184,3 +184,120 @@ footer {
   width: 32px;
   height: auto;
 }
+
+.contact-intro {
+  text-align: center;
+}
+
+.contact-intro h1 {
+  position: static;
+  background-color: transparent;
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.company-info {
+  padding: 16px;
+}
+
+.contact-grid iframe {
+  width: 100%;
+  min-height: 260px;
+  border: 2px solid var(--secondary-color);
+}
+
+.employees {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+
+.employees h2 {
+  grid-column: 1 / -1;
+}
+
+.employees figure {
+  margin: 0;
+}
+
+.employees img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border: 2px solid var(--secondary-color);
+}
+
+.employees figcaption {
+  padding-top: 8px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 12px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+label,
+legend {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  font: inherit;
+}
+
+fieldset {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid var(--secondary-color);
+}
+
+fieldset label,
+.newsletter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent1-color);
+  font-weight: 400;
+}
+
+fieldset input,
+.newsletter input {
+  width: auto;
+}
+
+button {
+  justify-self: start;
+  padding: 12px 24px;
+  border: 0;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
